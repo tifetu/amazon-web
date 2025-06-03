@@ -1,0 +1,244 @@
+/* 
+.catagory_container {
+  position: absolute;
+  display: flex;
+  top: 80%;
+  left: 50%;
+  gap: 20px;
+  height: 300px;
+  justify-content: center;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+} */
+
+/* Individual Category Card */
+/* .category_card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 225px;
+  height: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+} */
+.category_card img {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+  }
+  /* Hover effect on category card */
+  /* .category_card:hover {
+      transform: translateY(x); 
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    } */
+  .category_card::before {
+    top: 20px;
+    z-index: 1000;
+  }
+  /* Title of each category card */
+  .category_card span {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Description of each category card */
+  .category_card p {
+    font-size: 1em;
+    color: #777;
+    text-align: center;
+  }
+  
+  /* Optional: Adding responsive styles */
+  @media (max-width: 768px) {
+    .catagory_container {
+      justify-content: center;
+    }
+  
+    .category_card {
+      width: 200px;
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .category_card {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+
+  /* header css */
+  .fixed{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header_container {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131921;
+    color: white;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  .logo_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+  }
+  
+  .logo_container img {
+    width: 100px;
+    object-fit: contain;
+  }
+  
+  .logo_container span {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .delivery {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    color: white;
+    line-height: 1.2;
+  }
+  
+  .delivery p {
+    margin: 0;
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  .delivery span {
+    font-weight: bold;
+  }
+  
+  /* Search Bar */
+  .search {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 0 20px;
+    height: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .search select {
+    height: 100%;
+    border: none;
+    padding: 0 10px;
+    background-color: #f3f3f3;
+    font-size: 14px;
+    outline: none;
+    color: black;
+  }
+  
+  .search input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    padding: 0 10px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .search svg {
+    background-color: #febd69;
+    padding: 10px;
+    height: 100%;
+    width: 40px;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+  }
+  
+  /* Right side (language, account, orders, cart) */
+  .order {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .order > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .order img {
+    width: 24px;
+    height: 16px;
+    object-fit: contain;
+  }
+  
+  .order select {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .order a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .order a > div {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+  
+  .order a p {
+    margin: 0;
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  .order a span {
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Cart Icon */
+  .order a:last-child {
+    display: flex;
+    align-items: center;
+  }
+  
+  .order a:last-child svg {
+    font-size: 24px;
+  }
+  
+  .order a:last-child span {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #f08804;
+    color: black;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    z-index: 1;
+  }
+  
+  
+  
